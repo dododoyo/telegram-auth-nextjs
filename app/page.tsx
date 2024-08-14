@@ -13,7 +13,7 @@ export default async function Home() {
 		);
 	}
 
-	const user = await prisma.user.findUnique({
+	const user = await prisma.tGUser.findUnique({
 		where: {
 			id: session.user.id,
 		},

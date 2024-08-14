@@ -4,7 +4,7 @@ import {PrismaClient} from "@prisma/client";
 export const prisma = new PrismaClient();
 
 export async function createUserOrUpdate(user: TelegramUserData) {
-	return prisma.tguser.upsert({
+	return prisma.tGUser.upsert({
 		where: {
 			id: user.id.toString(),
 		},
