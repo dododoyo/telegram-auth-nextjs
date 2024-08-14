@@ -4,5 +4,6 @@ declare namespace NodeJS {
 		NEXTAUTH_SECRET: string;
 		BOT_TOKEN: string;
 		BOT_USERNAME: string;
+		POSTGRES_PRISMA_URL: string;
 	}
 }
